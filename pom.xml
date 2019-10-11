@@ -45,7 +45,7 @@
   </dependencies>
   <build>
     
-    <finalName>${project.SpringMVC}##${project.0.0.1-SNAPSHOT}.${1}</finalName>
+    <finalName>SpringMVC.0.0.1-SNAPSHOT.${BUILD_NUMBER}</finalName>
 
   </build>
 </project>
