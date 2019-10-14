@@ -1,5 +1,5 @@
 <html>
-<body style="background-color:#E6E6FA">
+<body style="background-color:red">
 <p>Welcome to Spring MVC Tutorial</p>
 </body>
 </html>
