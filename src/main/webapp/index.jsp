@@ -66,7 +66,7 @@ input[type=submit] {
 </head>
 <body>
 
-<h3>Password Validation pls</h3>
+<h3>Password Validation pls.........</h3>
 <p>Try to submit the form.</p>
 
 <div class="container">
