@@ -1,18 +1,46 @@
-pipeline {
+pipeline
+{
     agent any
-    tools {
+    tools 
+    {
              maven 'apache-maven-3.5.4'
              jdk 'jdk-11.0.4_windows-x64_bin'
     }
-    stages {
-        stage('Build') {
-            steps {
+    stages
+    {
+        stage('Build')
+        {
+            steps
+            {
                 bat(/mvn clean install/)
             }
         }
         
-        stage('Deploy') {
-            steps {
+        parallel
+        {    
+                stage("Unit Test")
+                {
+                    steps
+                    {
+                        echo 'Run unit tests here...'
+                    }
+                }
+        
+                stage ("Integration Test")
+                {
+                    steps
+                    {
+                        echo 'Run integration tests here...'
+                    }
+                }
+                
+          }
+
+        
+        stage('Deploy')
+        {
+            steps
+            {
                 bat(/copy "target\*.war" "C:\apache-tomcat-9.0.26\webapps\"/)
             }
         }
