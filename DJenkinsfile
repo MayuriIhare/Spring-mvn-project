@@ -16,6 +16,8 @@ pipeline
             }
         }
         
+        stage("Parallel Test")
+        {
         parallel
         {    
                 stage("Unit Test")
@@ -36,7 +38,7 @@ pipeline
                 
           }
 
-        
+        }
         stage('Deploy')
         {
             steps
