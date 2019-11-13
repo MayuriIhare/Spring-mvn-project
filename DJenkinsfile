@@ -10,5 +10,11 @@ pipeline {
                 bat(/mvn clean install/)
             }
         }
+        
+        stage('Deploy') {
+            steps {
+                bat(/copy "target\*.war" "C:\apache-tomcat-9.0.26\webapps\"/)
+            }
+        }
     }
 }
