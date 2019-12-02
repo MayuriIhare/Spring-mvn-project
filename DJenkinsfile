@@ -26,7 +26,7 @@ def t = "asdf"
                 {
                     steps
                     {
-                        echo 'Run unit tests here...$t'
+                        echo 'Run unit tests here...'$t
                     }
                 }
         
