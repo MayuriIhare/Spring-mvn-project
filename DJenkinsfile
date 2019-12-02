@@ -1,5 +1,7 @@
+
 pipeline
 {
+def t = "asdf"
     agent any
     tools 
     {
@@ -20,7 +22,7 @@ pipeline
         {
         parallel
         {    
-                stage("Unit Test")
+                stage("Unit Test $t")
                 {
                     steps
                     {
