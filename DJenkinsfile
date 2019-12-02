@@ -1,7 +1,9 @@
-def t = "Done"
+
 pipeline
 {
-
+    environment{
+    def t = "Done"
+    }
     agent any
     tools 
     {
