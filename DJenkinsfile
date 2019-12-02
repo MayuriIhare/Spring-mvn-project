@@ -22,11 +22,11 @@ pipeline
         {
         parallel
         {    
-                stage("Unit Test ${t}")
+                stage("Unit Test ")
                 {
                     steps
                     {
-                        echo 'Run unit tests here...'
+                        echo 'Run unit tests here...${t}'
                     }
                 }
         
