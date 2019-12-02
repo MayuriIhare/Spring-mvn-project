@@ -22,7 +22,7 @@ pipeline
         {
         parallel
         {    
-                stage("Unit Test $t")
+                stage("Unit Test ${t}")
                 {
                     steps
                     {
