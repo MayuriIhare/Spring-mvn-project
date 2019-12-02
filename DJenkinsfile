@@ -26,7 +26,7 @@ pipeline
                 {
                     steps
                     {
-                        echo 'Run unit tests here...${t}'
+                        echo 'Run unit tests here...$t'
                     }
                 }
         
