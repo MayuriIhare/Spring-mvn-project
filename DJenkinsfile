@@ -1,7 +1,7 @@
-
+def t = "asdf"
 pipeline
 {
-def t = "asdf"
+
     agent any
     tools 
     {
